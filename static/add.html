@@ -1,6 +1,6 @@
 {{#*inline "page"}}
 <!-- Content BEGIN-->
-  <form action="add_cat_form" class="p-10" method="post" enctype="multipart/form-data">
+  <form action="add_dog_form" class="p-10" method="post" enctype="multipart/form-data">
 
   <div class="space-y-12">
     <div class="border-b border-gray-900/10 pb-12">
@@ -32,9 +32,9 @@
                 <label for="file-upload"
                   class="relative cursor-pointer rounded-md bg-white font-semibold text-gray-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-gray-600 focus-within:ring-offset-2 hover:text-gray-500">
                   <span>Upload a file</span>
-                  <input id="image" name="image" type="file" class="sr-only">
+                  <input type="file" name="image" id="image" value="" />
+                  <!-- <input id="image" name="image" type="file" value="" class="sr-only"> -->
                 </label>
-                <p class="pl-1">or drag and drop</p>
               </div>
               <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
             </div>
